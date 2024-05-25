@@ -1,0 +1,9 @@
+{
+    "defaultIndex": "do-homework",
+    "data": [
+        { "value": "sign-in", "label": "签到" },
+        { "value": "video-learning", "label": "视频学习" },
+        { "value": "do-homework", "label": "作业任务" },
+        { "value": "do-examination", "label": "测评任务" }
+    ]
+}

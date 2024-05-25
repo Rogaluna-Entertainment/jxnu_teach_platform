@@ -1,0 +1,12 @@
+// 课程详情页面路由映射
+{
+    task: TaskView.vue // 任务页面
+    resource: ResourceView.vue // 资源页面
+    answering: AnsweringView.vue // 答疑页面
+    homework: HomeworkView.vue // 作业页面
+    examination: ExaminationView.vue // 测试页面
+    knowledgeGraph: KnowledgeGraphView.vue // 知识图谱页面
+    oralTest: OralTestView.vue // 口语测评页面
+    recommendTask: RecommendTaskView.vue // 推荐任务页面
+    recommendResource: RecommendResourceView.vue // 推荐资源页面
+}

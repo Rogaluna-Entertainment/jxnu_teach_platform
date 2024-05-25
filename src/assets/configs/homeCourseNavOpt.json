@@ -1,0 +1,29 @@
+{
+    "student": [
+
+        {
+            "title": "我学的课",
+            "frontIcon": "el-icon-edit",
+            "name": "study",
+            "index": "0"
+        }
+    ],
+    "teacher": [
+
+        {
+            "title": "我教的课",
+            "frontIcon": "el-icon-edit",
+            "name": "teach",
+            "index": "0"
+        }
+    ],
+    "admin": [
+
+        {
+            "title": "后台管理",
+            "frontIcon": "el-icon-edit",
+            "name": "manager",
+            "index": "0"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+$color-alpha: #409EFF;
+.senior-box {
+    background-color: rgba(#FFF, 0.5);
+    width: 100%;
+    max-width: 600px;
+    padding: 5px;
+    border: 2px solid $color-alpha;
+    &:before,
+    &:after {
+        content: "•";
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        font-size: 14px;
+        color: $color-alpha;
+        border: 2px solid $color-alpha;
+        line-height: 12px;
+        top: 5px;
+        text-align: center;
+    }
+    &:before {
+        left: 5px;
+    }
+    &:after {
+        right: 5px;
+    }
+    .senior-box-inner {
+        position: relative;
+        border: 2px solid $color-alpha;
+        padding: 40px;
+        &:before,
+        &:after {
+            content: "•";
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            font-size: 14px;
+            color: $color-alpha;
+            border: 2px solid $color-alpha;
+            line-height: 12px;
+            bottom: -2px;
+            text-align: center;
+        }
+        &:before {
+            left: -2px;
+        }
+        &:after {
+            right: -2px;
+        }
+    }
+}

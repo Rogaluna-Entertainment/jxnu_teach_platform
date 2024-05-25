@@ -1,0 +1,51 @@
+{
+  "id": "4511547",
+  "name": "common",
+  "font_family": "iconfont",
+  "css_prefix_text": "el-icon-xedia-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "31997851",
+      "name": "人工智能",
+      "font_class": "rengongzhineng",
+      "unicode": "e740",
+      "unicode_decimal": 59200
+    },
+    {
+      "icon_id": "36284926",
+      "name": "人工智能_line",
+      "font_class": "rengongzhineng_line",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "23004853",
+      "name": "选择科目",
+      "font_class": "icon__xuanzekemu",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "7949547",
+      "name": "点赞",
+      "font_class": "dianzan",
+      "unicode": "e697",
+      "unicode_decimal": 59031
+    },
+    {
+      "icon_id": "7960534",
+      "name": "点赞2",
+      "font_class": "dianzan1",
+      "unicode": "e6a6",
+      "unicode_decimal": 59046
+    },
+    {
+      "icon_id": "8136353",
+      "name": "交流",
+      "font_class": "jiaoliu",
+      "unicode": "e6b8",
+      "unicode_decimal": 59064
+    }
+  ]
+}

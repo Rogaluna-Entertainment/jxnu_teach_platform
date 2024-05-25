@@ -1,0 +1,13 @@
+{
+    "data": [
+        { "label": "单选题", "value": "single-choice", "color": "#409EFF" },
+        { "label": "多选题", "value": "multiple-choice", "color": "#409EFF" },
+        { "label": "简答题", "value": "short-answer", "color": "#909399" },
+        { "label": "口语题", "value": "oral", "color": "#67C23A" },
+        { "label": "听力题", "value": "listening", "color": "#E6A23C" },
+        { "label": "判断题", "value": "true-false", "color": "#F56C6C" },
+        { "label": "论述题", "value": "essay", "color": "#6E707E" },
+        { "label": "阅读理解题", "value": "reading-comprehension", "color": "#1F2D3D" },
+        { "label": "完型填空题", "value": "cloze-test", "color": "#303133" }
+    ]
+}

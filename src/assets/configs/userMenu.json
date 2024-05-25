@@ -1,0 +1,14 @@
+{
+    "student": [
+        { "command": "info", "name": "个人信息", "disabled": false, "divided": false },
+        { "command": "exit", "name": "退出", "disabled": false, "divided": true }
+    ],
+    "teacher": [
+        { "command": "info", "name": "个人信息", "disabled": false, "divided": false },
+        { "command": "exit", "name": "退出", "disabled": false, "divided": true }
+    ],
+    "admin": [
+        { "command": "info", "name": "个人信息", "disabled": false, "divided": false },
+        { "command": "exit", "name": "退出", "disabled": false, "divided": true }
+    ]
+}

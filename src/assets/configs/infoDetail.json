@@ -1,0 +1,17 @@
+{
+    "student": [
+        { "prop": "head", "label": "头像", "editable": true, "type": "image" },
+        { "prop": "name", "label": "姓名", "editable": true, "type": "input" },
+        { "prop": "studentId", "label": "学号", "editable": true, "type": "input" },
+        { "prop": "class", "label": "班级", "editable": true, "type": "input" },
+        { "prop": "speciality", "label": "专业", "editable": true, "type": "input" },
+        { "prop": "telephone", "label": "手机号", "editable": false, "type": "input" },
+        { "prop": "email", "label": "邮箱", "editable": false, "type": "input" }
+    ],
+    "teacher": [
+        { "prop": "name", "label": "姓名", "editable": true, "type": "input" }
+    ],
+    "admin": [
+
+    ]
+}
