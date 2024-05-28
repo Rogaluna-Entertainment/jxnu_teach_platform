@@ -58,7 +58,7 @@
 <script>
 import List from '@/components/widgets/layout/List.vue';
 import AddQuestionModalVue from "@/components/dialogs/AddQuestionModal.vue"
-import QuestionItemVue from '@/components/QuestionItem.vue';
+import QuestionItemVue from '@/components/list-item/QuestionItem.vue';
 import QuestionDetailSectionVue from '@/components/sections/QuestionDetailSection.vue';
 
 export default {

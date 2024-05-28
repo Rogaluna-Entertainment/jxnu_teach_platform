@@ -6,10 +6,16 @@ Vue.use(VueRouter)
 const routes = [
 
     {
+        path: '/welcome',
+        name: 'welcome',
+        component: () =>
+            import ('@/views/login/WelcomeView.vue')
+    },
+    {
         path: '/login',
         name: 'login',
         component: () =>
-            import ('@/views/login/LoginView.vue')
+            import ('@/views/login/LoginView2.vue')
     },
     {
         path: '/home',
@@ -30,11 +36,13 @@ const routes = [
                 name: 'coursesNav',
                 component: () =>
                     import ('@/views/home/CoursesNavView.vue'),
-                children: [
-
-                ]
             },
-
+            {
+                path: 'navLoadingView',
+                name: 'navLoadingView',
+                component: () =>
+                    import ('@/views/home/course/NavLoadingView.vue'),
+            },
             {
                 path: 'courseDetail/:courseId',
                 name: 'courseDetail',
@@ -113,7 +121,90 @@ const routes = [
                         name: 'classManager',
                         component: () =>
                             import ('@/views/home/course/pages/ClassManagerView.vue')
-                    }
+                    },
+                    // 学习公告
+                    {
+                        path: 'courseListView',
+                        name: 'courseListView',
+                        component: () =>
+                            import ('@/views/home/course/pages/CourseListView.vue')
+                    },
+                    {
+                        path: 'lectureScheduleView',
+                        name: 'lectureScheduleView',
+                        component: () =>
+                            import ('@/views/home/course/pages/LectureScheduleView.vue')
+                    },
+                    // AI资源生成及智能管理
+                    {
+                        path: 'teachingMaterials', // 教学资源推荐
+                        name: 'teachingMaterials',
+                        component: () =>
+                            import ('@/views/home/course/pages/TeachingMaterialsView.vue'),
+                    },
+                    {
+                        path: 'coursewareCreate', // 个性化课件生成
+                        name: 'coursewareCreate',
+                        component: () =>
+                            import ('@/views/home/course/pages/CoursewareCreateView.vue'),
+                    },
+                    {
+                        path: 'personalizedTesting', // 个性化测试生成
+                        name: 'personalizedTesting',
+                        component: () =>
+                            import ('@/views/home/course/pages/PersonalizedTestingView.vue'),
+                    },
+                    {
+                        path: 'teachingPlanGene', // AI思政教案生成
+                        name: 'teachingPlanGene',
+                        component: () =>
+                            import ('@/views/home/course/pages/TeachingPlanGeneView.vue'),
+                    },
+                    {
+                        path: 'otherServices', // 其他服务：英、美国之音；CGTN；中国日报
+                        name: 'otherServices',
+                        component: () =>
+                            import ('@/views/home/course/pages/OtherServicesView.vue'),
+                    },
+                    // 学生学情分析报告
+                    {
+                        path: 'progressMonitoring', // 学生学习进度监控
+                        name: 'progressMonitoring',
+                        component: () =>
+                            import ('@/views/home/course/pages/ProgressMonitoringView.vue'),
+                    },
+                    {
+                        path: 'inquiryApproval', // 学生练习测试情况查询与审批
+                        name: 'inquiryApproval',
+                        component: () =>
+                            import ('@/views/home/course/pages/InquiryApprovalView.vue'),
+                    },
+                    {
+                        path: 'identifyFeedback', // 学生问题识别及自生成反馈（需新增）
+                        name: 'identifyFeedback',
+                        component: () =>
+                            import ('@/views/home/course/pages/IdentifyFeedbackView.vue'),
+                    },
+                    // AI及其他服务
+                    {
+                        path: 'oralPractice', // 针对性口语练习（需新增）及测评反馈
+                        name: 'oralPractice',
+                        component: () =>
+                            import ('@/views/home/course/pages/OralPracticeView.vue'),
+                    },
+                    {
+                        path: 'interactiveClass', // 全过程双师互动课堂
+                        name: 'interactiveClass',
+                        component: () =>
+                            import ('@/views/home/course/pages/InteractiveClassView.vue'),
+                    },
+                    {
+                        path: 'spokenAssistant', // 1V1智能辅导
+                        name: 'spokenAssistant',
+                        component: () =>
+                            import ('@/views/home/course/pages/SpokenAssistantView.vue'),
+                    },
+
                 ]
             },
             {
@@ -156,8 +247,8 @@ router.beforeEach((to, from, next) => {
     const targetName = homeStartPage[authority];
 
     // 当前用户权限为"none"且不在登录页面时，重定向到登录
-    if (authority === 'none' && to.name !== 'login') {
-        next({ name: 'login' });
+    if (authority === 'none' && to.name !== 'welcome' && to.name !== 'login') {
+        next({ name: 'welcome' });
     }
     // 当前路由是“/”且authority不为"none"时，重定向到home
     else if (to.path === '/' && authority !== 'none') {

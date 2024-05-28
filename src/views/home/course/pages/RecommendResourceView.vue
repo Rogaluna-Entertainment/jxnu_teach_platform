@@ -18,7 +18,7 @@
 
 <script>
 import List from '@/components/widgets/layout/List.vue';
-import RecommendResourceItemVue from '@/components/RecommendResourceItem.vue';
+import RecommendResourceItemVue from '@/components/list-item/RecommendResourceItem.vue';
 
 export default {
     components: {

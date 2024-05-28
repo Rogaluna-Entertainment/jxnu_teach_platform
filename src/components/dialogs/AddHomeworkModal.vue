@@ -49,7 +49,7 @@
 </template>
 
 <script>
-import QuestionComposerModuleVue from '@/components/QuestionComposerModule.vue';
+import QuestionComposerModuleVue from '@/components/widgets/app/QuestionComposerModule.vue';
 
 export default {
     components: {

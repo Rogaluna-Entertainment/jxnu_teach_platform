@@ -57,7 +57,7 @@
 
 <script>
 import List from '@/components/widgets/layout/List.vue';
-import HomeworkItemVue from '@/components/HomeworkItem.vue';
+import HomeworkItemVue from '@/components/list-item/HomeworkItem.vue';
 import AddHomeworkModalVue from '@/components/dialogs/AddHomeworkModal.vue';
 import HomeworkDetailSectionVue from '@/components/sections/HomeworkDetailSection.vue';
 import SetAutoCorrectionModalVue from '@/components/dialogs/SetAutoCorrectionModal.vue';

@@ -1,9 +1,9 @@
 <template>
     <div class="list-container" :class="{'is-horizontal': horizontal}">
         <div v-for="(item, index) in items" :key="index"
-             class="list-item" @click="handleClick(index)"
-             :class="{'focused': focusedIndex === index}"
-             :style="itemStyle(item)">
+            class="list-item" @click="handleClick(index)"
+            :class="{'focused': focusedIndex === index}"
+            :style="itemStyle(item)">
             <slot name="item" :item="item" :index="index">{{ item }}</slot>
         </div>
     </div>

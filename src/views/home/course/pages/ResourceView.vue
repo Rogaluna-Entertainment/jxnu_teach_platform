@@ -64,7 +64,7 @@
 <script>
 import '@/icons/iconFile/iconfont';
 import List from '@/components/widgets/layout/List.vue';
-import FileItemVue from '@/components/FileItem.vue';
+import FileItemVue from '@/components/list-item/FileItem.vue';
 import AddFileModalVue from '@/components/dialogs/AddFileModal.vue';
 import AddFolderModalVue from '@/components/dialogs/AddFolderModal.vue';
 import RenameFileModalVue from '@/components/dialogs/RenameFileModal.vue';

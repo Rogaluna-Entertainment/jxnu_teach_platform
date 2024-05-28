@@ -114,6 +114,8 @@ import loginAuthority from '@/assets/configs/loginAuthority.json'
 
 <style lang="scss" scoped>
 
+
+
 .background {
     background-image: url('@/assets/login_bk_1.jpg');
     background-size: cover;

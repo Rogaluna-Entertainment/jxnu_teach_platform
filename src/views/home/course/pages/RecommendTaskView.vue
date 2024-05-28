@@ -18,7 +18,7 @@
 
 <script>
 import List from '@/components/widgets/layout/List.vue';
-import RecommendTaskItemVue from '@/components/RecommendTaskItem.vue';
+import RecommendTaskItemVue from '@/components/list-item/RecommendTaskItem.vue';
 
 export default {
     components: {

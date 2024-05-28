@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import CourseAsideNavModuleVue from '@/components/CourseAsideNavModule.vue'
-import CourseMainModuleVue from '@/components/CourseMainModule.vue';
+import CourseAsideNavModuleVue from '@/components/widgets/app/CourseAsideNavModule.vue'
+import CourseMainModuleVue from '@/components/widgets/app/CourseMainModule.vue';
 
 export default {
     components: {

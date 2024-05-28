@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import CourseItemVue from '@/components/CourseItem.vue'
+import CourseItemVue from '@/components/list-item/CourseItem.vue'
 import AddCourseModalVue from '@/components/dialogs/AddCourseModal.vue';
 import homeCourseNavOpt from '@/assets/configs/homeCourseNavOpt.json'
 import { getTeacherCoursesAPI } from '@/services/api/course/getTeacherCourses';
@@ -88,26 +88,46 @@ export default {
         },
         getTeachCourseData(){
             const teacherId = this.$store.state.accountId;
-            getTeacherCoursesAPI(teacherId, this.$store.state.token)
-                .then(response => {
-                    const responseBody = response.data
-                    this.courses = responseBody.map(course => ({
-                        title: course.course_name,
-                        instructor: `主讲老师:${course.creator_name}`, // 假设creator字段是教师ID或名称
-                        image: course.course_cover_url || 'default_image.jpg', // 如果没有封面图像，使用默认图像
-                        courseId: course.course_id.toString() // 确保courseId是字符串
-                    }));
-                })
-                .catch(error => {
+            // getTeacherCoursesAPI(teacherId, this.$store.state.token)
+            //     .then(response => {
+            //         const responseBody = response.data
+            //         this.courses = responseBody.map(course => ({
+            //             title: course.course_name,
+            //             instructor: `主讲老师:${course.creator_name}`, // 假设creator字段是教师ID或名称
+            //             image: course.course_cover_url || 'default_image.jpg', // 如果没有封面图像，使用默认图像
+            //             courseId: course.course_id.toString() // 确保courseId是字符串
+            //         }));
+            //     })
+            //     .catch(error => {
                     
-                })
+            //     })
+            const responseBody = [
+                {
+                    "title": "课程标题1",
+                    "instructor": "主讲老师1",
+                    "image": "image1.jpg",
+                    "courseId": "1"
+                }
+            ]
+            this.courses = responseBody.map(course => ({
+                title: course.title,
+                instructor: `主讲老师:${course.instructor}`, // 假设creator字段是教师ID或名称
+                image: course.course_cover_url || 'default_image.jpg', // 如果没有封面图像，使用默认图像
+                courseId: course.courseId.toString() // 确保courseId是字符串
+            }));
         },
         handleCardClick(courseId) {
             // 导航到课程详情页面
-            this.$router.push({ 
-                name: 'courseDetail', 
-                params: { courseId: courseId }
-            })
+
+            this.$router.push (
+                {
+                    name: 'navLoadingView'
+                }
+            );
+            // this.$router.push({ 
+            //     name: 'courseDetail', 
+            //     params: { courseId: courseId }
+            // })
         }
     },
 }

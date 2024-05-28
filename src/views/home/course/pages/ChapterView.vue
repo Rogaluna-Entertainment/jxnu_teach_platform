@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import ChapterItemVue from '@/components/ChapterItem.vue';
+import ChapterItemVue from '@/components/list-item/ChapterItem.vue';
 import AddChapterListModalVue from '@/components/dialogs/AddChapterListModal.vue';
 import ChapterDetailSectionVue from '@/components/sections/ChapterDetailSection.vue';
 import AddChapterNodeModalVue from '@/components/dialogs/AddChapterNodeModal.vue';

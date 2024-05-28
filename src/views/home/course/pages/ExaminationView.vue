@@ -57,7 +57,7 @@
 
 <script>
 import List from '@/components/widgets/layout/List.vue';
-import ExaminationItem from '@/components/ExaminationItem.vue';
+import ExaminationItem from '@/components/list-item/ExaminationItem.vue';
 import AddExaminationModalVue from '@/components/dialogs/AddExaminationModal.vue';
 import ExaminationDetailSectionVue from '@/components/sections/ExaminationDetailSection.vue';
 import SetAutoCorrectionModalVue from '@/components/dialogs/SetAutoCorrectionModal.vue';

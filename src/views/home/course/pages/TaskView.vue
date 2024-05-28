@@ -60,7 +60,7 @@
 
 <script>
 import List from '@/components/widgets/layout/List.vue';
-import TaskItemVue from '@/components/TaskItem.vue';
+import TaskItemVue from '@/components/list-item/TaskItem.vue';
 import AddTaskModalVue from '@/components/dialogs/AddTaskModal.vue';
 import TaskDetailSectionVue from '@/components/sections/TaskDetailSection.vue';
 import SetAutoTaskModalVue from '@/components/dialogs/SetAutoTaskModal.vue';

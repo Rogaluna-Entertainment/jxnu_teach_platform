@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import HomeHeaderModuleVue from '@/components/HomeHeaderModule.vue'
+import HomeHeaderModuleVue from '@/components/widgets/app/HomeHeaderModule.vue'
 import { findNameByIndex } from '@/functions/findNameByIndex'
 
 export default {

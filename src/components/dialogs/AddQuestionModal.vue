@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import QuestionCreatorModuleVue from '@/components/QuestionCreatorModule.vue';
+import QuestionCreatorModuleVue from '@/components/widgets/app/QuestionCreatorModule.vue';
 
 export default {
     components: {

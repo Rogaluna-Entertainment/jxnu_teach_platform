@@ -9,9 +9,9 @@
 </template>
 
 <script>
-import ManagerTableModuleVue from '@/components/ManagerTableModule.vue'
-import ManagerToolBarModuleVue from '@/components/ManagerToolBarModule.vue'
-import ManagerModifyModuleVue from '@/components/ManagerModifyModule.vue'
+import ManagerTableModuleVue from '@/components/widgets/app/ManagerTableModule.vue'
+import ManagerToolBarModuleVue from '@/components/widgets/app/ManagerToolBarModule.vue'
+import ManagerModifyModuleVue from '@/components/widgets/app/ManagerModifyModule.vue'
 
 export default {
     components: {

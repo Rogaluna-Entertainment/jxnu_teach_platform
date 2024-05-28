@@ -20,10 +20,12 @@
 html, body {
   width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  max-height: none !important;
+  max-width: none !important;
 
-  overflow: hidden;
+  overflow: auto;
 }
 
 .icon {

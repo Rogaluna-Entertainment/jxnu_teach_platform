@@ -100,11 +100,11 @@ export default {
     },
     methods: {
         async filterGroups() {
-            getCourseGroupAPI(this.$store.state.token)
-                .then(response => {
-                    const responseBody = response.data
-                    this.groupOptions = this.formatOptions(responseBody);
-                })
+            // getCourseGroupAPI(this.$store.state.token)
+            //     .then(response => {
+            //         const responseBody = response.data
+            //         this.groupOptions = this.formatOptions(responseBody);
+            //     })
         },
         formatOptions(options) {
             return options.map(option => {
@@ -133,23 +133,23 @@ export default {
                     if (this.form.group) {
                         courseRequest.course_group_id = this.form.group[this.form.group.length-1]
                     }
-                    addCourseAPI(courseRequest, this.$store.state.token)
-                        .then(response => {
-                            const responseBody = response.data
-                            this.$message({
-                                type: 'success',
-                                message: responseBody.message + ":" + responseBody.course_id
-                            });
+                    // addCourseAPI(courseRequest, this.$store.state.token)
+                    //     .then(response => {
+                    //         const responseBody = response.data
+                    //         this.$message({
+                    //             type: 'success',
+                    //             message: responseBody.message + ":" + responseBody.course_id
+                    //         });
 
-                            // 刷新课程
-                            this.$emit('added-course');
-                        })
-                        .catch(error => {
-                            this.$message({
-                                type: 'error',
-                                message: error
-                            });
-                        })
+                    //         // 刷新课程
+                    //         this.$emit('added-course');
+                    //     })
+                    //     .catch(error => {
+                    //         this.$message({
+                    //             type: 'error',
+                    //             message: error
+                    //         });
+                    //     })
                     this.localVisible = false;
                 } else {
                     console.log('表单验证失败！');

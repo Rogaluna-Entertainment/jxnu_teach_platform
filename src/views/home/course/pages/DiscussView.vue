@@ -54,7 +54,7 @@
 
 <script>
 import List from '@/components/widgets/layout/List.vue';
-import DiscussItemVue from '@/components/DiscussItem.vue';
+import DiscussItemVue from '@/components/list-item/DiscussItem.vue';
 import DiscussDetailSectionVue from '@/components/sections/DiscussDetailSection.vue';
 import SetAutoReplyModalVue from '@/components/dialogs/SetAutoReplyModal.vue';
 
